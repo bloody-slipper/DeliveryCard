@@ -21,10 +21,5 @@ public class DeliveryCard {
         $x("//*[@class=\"button__text\"]").click();
         $(withText("Встреча успешно забронирована")).shouldBe(Condition.visible,  Duration.ofSeconds(15));
 
-
-
-
-
-
     }
 }
