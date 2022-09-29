@@ -5,6 +5,8 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility = 11
+
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
@@ -14,7 +16,6 @@ repositories {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation group: 'com.codeborne', name: 'selenide', version: '6.7.2'
 }
 
